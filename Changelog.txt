@@ -1,0 +1,1 @@
+17.01.26 - Version 1.0.0 Contains all known megas so far. Abilities and Pokemon that are not in IF are left out. 

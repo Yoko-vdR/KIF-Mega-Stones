@@ -1810,3 +1810,29 @@ if defined?(PokemonDataBox)
     end
   end
 end
+
+# ============================================================================
+# AUTO-UPDATE SELF-REGISTRATION
+# ============================================================================
+# Register this mod for auto-updates
+# ============================================================================
+if defined?(ModSettingsMenu::ModRegistry)
+  ModSettingsMenu::ModRegistry.register(
+    name: "Mega Stones",          
+    file: "MegaStoneIcons.zip",          
+    version: "1.0.0",               
+    download_url: "https://raw.githubusercontent.com/Yoko-vdR/KIF-Mega-Stones/main/MegaStoneIcons.zip",
+    changelog_url: "https://raw.githubusercontent.com/Yoko-vdR/KIF-Mega-Stones/main/Changelog.md",
+    graphics: [],                   
+    dependencies: []                 
+  )
+  
+  # Log initialization with version from registration
+  begin
+    version = ModSettingsMenu::ModRegistry.all["050_MegaStoneSimulator.rb"][:version] rescue nil
+    version_str = version ? "v#{version}" : "(version unknown)"
+    ModSettingsMenu.debug_log("YourModPrefix: Mega Stones #{version_str} loaded successfully")
+  rescue
+    # Silently fail if we can't log
+  end
+end
