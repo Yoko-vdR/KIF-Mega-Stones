@@ -1822,6 +1822,7 @@ if defined?(ModSettingsMenu::ModRegistry)
     file: "050_MegaStoneSimulator.rb",          
     version: "1.0.0",               
     download_url: "https://github.com/Yoko-vdR/KIF-Mega-Stones/archive/refs/heads/main.zip",
+    version_check_url: "https://raw.githubusercontent.com/Yoko-vdR/KIF-Mega-Stones/refs/heads/main/Mods/050_MegaStoneSimulator.rb",
     changelog_url: "https://raw.githubusercontent.com/Yoko-vdR/KIF-Mega-Stones/main/Changelogs/Changelog.txt",
     graphics: [],                   
     dependencies: []                 
