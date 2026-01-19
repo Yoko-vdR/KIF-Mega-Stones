@@ -706,7 +706,7 @@ module MegaStoneSim
       species: :BLASTOISE,
       rule: {
         types:   [:WATER, :WATER],
-        ability: :ADAPTABILITY, # Mega Launcher doesn't exist in IF
+        ability: :MEGALAUNCHER,
         base_stats_add: {ATTACK: 20, DEFENSE: 20, SPECIAL_ATTACK: 50, SPECIAL_DEFENSE: 10}
       }
     },
@@ -794,7 +794,7 @@ module MegaStoneSim
       species: :KANGASKHAN,
       rule: {
         types:   [:NORMAL, :NORMAL],
-        ability: :ADAPTABILITY, # Parental Bond doesn't exist in IF
+        ability: :PARENTALBOND,
         base_stats_add: { ATTACK: 30, DEFENSE: 20, SPECIAL_ATTACK: 20, SPECIAL_DEFENSE: 20, SPEED: 10 }
       }
     },
@@ -866,7 +866,7 @@ module MegaStoneSim
       species: :PINSIR,
       rule: {
         types:   [:BUG, :FLYING],
-        ability: :ADAPTABILITY, # Aerilate doesn't exist in IF
+        ability: :AERILATE,
         base_stats_add: { ATTACK: 30, DEFENSE: 20, SPECIAL_ATTACK: 10, SPECIAL_DEFENSE: 20, SPEED: 20 }
       }
     },
@@ -874,7 +874,7 @@ module MegaStoneSim
       species: :RAYQUAZA,
       rule: {
         types:   [:DRAGON, :FLYING],
-        ability: :AIRLOCK, # Delta Stream doesn't exist in IF
+        ability: :DELTASTREAM,
         base_stats_add: { ATTACK: 30, DEFENSE: 10, SPECIAL_ATTACK: 30, SPECIAL_DEFENSE: 10, SPEED: 20 }
       }
     },
@@ -890,7 +890,7 @@ module MegaStoneSim
       species: :SALAMENCE,
       rule: {
         types:   [:DRAGON, :FLYING],
-        ability: :MOXIE, # Aerilate doesn't exist in IF
+        ability: :AERILATE, 
         base_stats_add: { ATTACK: 10, DEFENSE: 50, SPECIAL_ATTACK: 10, SPECIAL_DEFENSE: 10, SPEED: 20 }
       }
     },
@@ -1823,7 +1823,8 @@ if defined?(ModSettingsMenu::ModRegistry)
     version: "1.0.0",               
     download_url: "https://github.com/Yoko-vdR/KIF-Mega-Stones/archive/refs/heads/main.zip",
     version_check_url: "https://raw.githubusercontent.com/Yoko-vdR/KIF-Mega-Stones/refs/heads/main/Mods/050_MegaStoneSimulator.rb",
-    changelog_url: "https://raw.githubusercontent.com/Yoko-vdR/KIF-Mega-Stones/main/Changelogs/Changelog.txt",
+    changelog_url: "https://raw.githubusercontent.com/Yoko-vdR/KIF-Mega-Stones/refs/heads/main/Changelogs/Mega_Stones_Changelog.txt
+",
     graphics: [],                   
     dependencies: []                 
   )

@@ -1,1 +1,4 @@
-17.01.26 - Version 1.0.0 Contains all known megas so far. Abilities and Pokemon that are not in IF are left out. 
+Mega Stones Changelog
+17.01.26 - Version 1.0.0.: Contains all known megas so far. Abilities and Pokemon that are not in IF are left out. 
+19.01.26 - Version 1.1.0.: Adds all missing abilities from pre ZA, since they are in fact in the game already. 
+19.01.26 - Version 1.1.0.: Fixed wrong mega stone name for Kangaskhan
