@@ -470,7 +470,11 @@ module MegaStoneItems
     { sym: :GOLURKITE, name: "Golurkite",
       desc: "A mysterious stone. Have Golurk or a fusion containing it hold this to unlock its true potential!", price: 0 },
     { sym: :GOLISOPITE, name: "Golisopite",
-      desc: "A mysterious stone. Have Golisopod or a fusion containing it hold this to unlock its true potential!", price: 0 }
+      desc: "A mysterious stone. Have Golisopod or a fusion containing it hold this to unlock its true potential!", price: 0 },
+    { sym: :REDORB, name: "Red Orb",
+      desc: "A shiny red orb that is said to have a legend tied to it.", price: 0 },
+    { sym: :BLUEORB, name: "Blue Orb",
+      desc: "A shiny blue orb that is said to have a legend tied to it.", price: 0 }
   ]
 
   @registered = false
@@ -1141,6 +1145,22 @@ module MegaStoneSim
         ability: :EMERGENCYEXIT,
         base_stats_add: { ATTACK: 25, DEFENSE: 35, SPECIAL_ATTACK: 10, SPECIAL_DEFENSE: 30 }
       }
+    },
+    :REDORB => {
+      species: :GROUDON,
+      rule: {
+        types:   [:GROUND, :FIRE],
+        ability: :DESOLATELAND,
+        base_stats_add: { ATTACK: 30, DEFENSE: 20, SPECIAL_ATTACK: 50 }
+      }
+    },
+    :BLUEORB => {
+      species: :KYOGRE,
+      rule: {
+        types:   [:WATER, :WATER],
+        ability: :PRIMORDIALSEA,
+        base_stats_add: { ATTACK: 50, SPECIAL_ATTACK: 30, SPECIAL_DEFENSE: 20 }
+      }
     }
   }
 
@@ -1207,7 +1227,9 @@ module MegaStoneSim
     :RAICHU    => [:RAICHUNITE_Y, :RAICHUNITE_X],
     :DARKRAI   => :DARKRANITE,
     :GOLURK    => :GOLURKITE,
-    :GOLISOPOD => :GOLISOPITE
+    :GOLISOPOD => :GOLISOPITE,
+    :GROUDON => :REDORB,
+    :KYOGRE => :BLUEORB
   }
 
   @dumped_items = false
