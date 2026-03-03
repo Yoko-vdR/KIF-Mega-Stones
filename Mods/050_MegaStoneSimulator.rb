@@ -1062,7 +1062,7 @@ module MegaStoneSim
       species: :DELPHOX,
       rule: {
         types:   [:FIRE, :PSYCHIC],
-        ability: :MAGICIAN,
+        ability: :LEVITATE,
         base_stats_add: { SPECIAL_ATTACK: 45, SPECIAL_DEFENSE: 25, SPEED: 30 }
       }
     },
